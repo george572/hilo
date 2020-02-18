@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hilo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/style/main.css">
+</head>
+<body>
+	<div id="app">
+		<div class="cards">
+			<div class="card-preview">
+				<img src="" alt="" id="preview-img">
+				<img src="" alt="" class="bet-indicator">
+				<div class="hidden-card">
+					<img src="assets/img/card-back.png" alt="">
+				</div>
+			</div>
+			<div class="card-back">
+				<span class="card-shadow-decor"></span>
+				<img src="assets/img/card-back.png" alt="" class="card-back-img">
+			</div>
+			<div class="change-card">
+				<img src="assets/img/another.svg" alt="">
+			</div>
+
+			<!-- hidden content before bet is set-->
+			<ul class="choose-card">
+				<li class="choose-card__item">
+					<img src="assets/img/card-back.png" alt="">
+				</li>
+				<li class="choose-card__item">
+					<img src="assets/img/card-back.png" alt="">
+				</li>
+				<li class="choose-card__item">
+					<img src="assets/img/card-back.png" alt="">
+				</li>
+				
+			</ul>
+
+			<div class="hilo-wrapper disabled">
+				<div class="lower-bet">
+					<button class="hilo-button btn-lower">ნაკლ. ან ტოლი <img src="assets/img/down.svg" alt=""></button>
+					<span>მოგება:</span>
+					<span id="win-probability-lower">0.2 ₾</span>
+				</div>
+				<div class="higher-bet">
+					<button class="hilo-button btn-higher">მეტი. ან ტოლი <img src="assets/img/up.svg" alt=""></button>
+					<span>მოგება:</span>
+					<span id="win-probability-higher">1.2 ₾</span>
+				</div>
+			</div>
+			<!-- hidden content ends here -->
+		</div>
+		<div class="bet-wrapper">
+			<div class="bet">
+				<div class="bet-manual">
+					<p>ფსონი ₾</p>
+					<input type="number" value="0.10" class="bet-input">
+					<img src="assets/img/minus.svg" alt="" class="lower">
+					<img src="assets/img/plus.svg" alt="" class="raise">
+				</div>
+				<ul class="bet-auto">
+					<li class="bet-auto__item" data-amount="1"><span>1₾</span></li>
+					<li class="bet-auto__item" data-amount="2"><span>2₾</span></li>
+					<li class="bet-auto__item" data-amount="5"><span>5₾</span></li>
+					<li class="bet-auto__item" data-amount="10"><span>10₾</span></li>
+				</ul>
+			</div>
+			<button href="#!" class="bet-btn">ფსონი</button>
+			<button href="#!" class="bet-clear">გასუფთავება</button>
+
+		</div>
+	</div>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
