@@ -382,9 +382,9 @@ body {
 }
 .game-started .card-back {
   width: 74px;
-  right: 156px;
+  right: 30px;
   height: 119px;
-  top: 17%;
+  top: -128%;
 }
 @media only screen and (max-width: 994px) {
   .game-started .card-back {
