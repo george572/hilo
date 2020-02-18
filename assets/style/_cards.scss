@@ -8,6 +8,25 @@
 		border:none;
 	}
 }
+.card-back-holder{
+    width: 326px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 40%;
+    @media only screen and( max-width: 994px){
+		width: 246px;
+		height: 100px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
+		top:33%;
+    }
+
+}
 .card-preview {
 	position: relative;
 	width: 578px;
@@ -30,6 +49,9 @@
 	@media only screen and (max-width: 995px){
 	height: 319px;
 	}
+	@media only screen and (max-width: 600px){
+	width: 100%
+	}
 }
 .card-global-shadow-style{
 	content:"";
@@ -49,13 +71,13 @@
 	width: 84px;
 	height: 132px;
 	position: absolute;
-	right: 117px;
+	right: 0;
 	top:50%;
     transform:translateY(-50%);
     border-radius: 10px;
 	@media only screen and (max-width: 995px){
 	width: 62px;
-    right: 161px;
+    right: 0;
 	top: 52%;
 	height: 99px;
 	}
